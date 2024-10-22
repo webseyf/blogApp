@@ -1,0 +1,73 @@
+/* PostDetails.css */
+
+.post-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.post-details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.post-details p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #34495e;
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-details {
+    padding: 1.5rem;
+  }
+
+  .post-details h1 {
+    font-size: 2rem;
+  }
+
+  .post-details p {
+    font-size: 1.1rem;
+  }
+}
+
+/* PostDetails.css */
+.edit-button, .delete-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.edit-button:hover, .delete-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .edit-button, .delete-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

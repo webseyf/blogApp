@@ -1,0 +1,113 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  height: 38px;
+  max-width: 1111px;
+  background-color: #2c3e50; /* Dark blue background */
+  padding: 15px 30px; /* Padding for the navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+
+
+.navbar-links {
+  list-style: none;
+  text-align: center;
+  text-align: center; /* Remove default list styling */
+  display: flex; /* Display links inline */
+  gap: 20px; /* Space between links */
+}
+
+.navbar-links li {
+  position: relative; /* Position for the dropdown */
+}
+
+.navbar-links a, .logout-button {
+  color: #ecf0f1; /* Light color for links */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navbar-links a:hover,
+.logout-button:hover {
+  background-color: #34495e; /* Darker blue on hover */
+  color: #fff; /* White text on hover */
+}
+
+.create-post-button {
+  background-color: #27ae60; /* Green background for create button */
+  color: #fff; /* White text */
+  padding: 10px 15px; /* Padding for button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.create-post-button:hover {
+  background-color: #219653; /* Darker green on hover */
+}
+
+.logout-button {
+  background: none; 
+  text-align: center;/* No background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+}
+
+.logout-button:hover {
+  color: #e74c3c; /* Red color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center the links */
+    display: none; /* Hide links by default */
+    position: absolute; /* Position absolute for dropdown */
+    top: 60px; /* Position below navbar */
+    left: 0;
+    right: 0;
+    background-color: #2c3e50; /* Background for dropdown */
+    z-index: 1000; /* On top of other content */
+  }
+.navbar{
+  justify-content: space-between;
+}
+  .navbar-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show toggle button */
+    cursor: pointer; /* Pointer cursor */
+  }
+
+  .navbar-toggle span {
+    display: block; /* Each line of the toggle button */
+    height: 3px; /* Height of lines */
+    width: 25px; /* Width of lines */
+    background-color: #ecf0f1; /* Color of lines */
+    margin: 4px 0; /* Space between lines */
+  }
+}
+.navbar-brand {
+  font-size: 24px; /* Larger font for the brand */
+  color: white; /* Light color for contrast */
+  text-decoration: none; /* Remove underline from link */
+}
+.seyf{
+  text-decoration-line: none;
+  color: yellow; 
+}
+.blog{
+  color: rgb(235, 8, 216);
+}
+
